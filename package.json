@@ -1,0 +1,12 @@
+{
+  "name": "webreb2k17",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Arne Martin Aurlien",
+  "scripts": {
+    "start": "slid slides.md"
+  },
+  "dependencies": {
+    "slid.js": "^1.0.2"
+  }
+}
