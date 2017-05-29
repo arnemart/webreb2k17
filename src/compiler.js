@@ -5,7 +5,7 @@ let generator = require('./generator');
 
 let program = '2d6 + 10';
 
-console.log(tokenizer(program));
+// console.log(tokenizer(program));
 
 // console.log(parser(tokenizer(program)));
 
