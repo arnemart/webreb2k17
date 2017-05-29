@@ -419,14 +419,28 @@ console.log(greeting + " web rebels");
 
 # The practical part
 
+~
+
+--
+
+~ quote unquote
+
 ----
 
 > I have created a programming language. It is exceedingly simple and can only be used for one thing:
-> Rolling dice.
+> Rolling dice. Anyone ever play dungeons and dragons? I haven't but I know that dice are used for this
+> game. This programming language rolls dice, in a syntax that should maybe probably be familiar for
+> D&D-players.
 
 ~
 
 # The Dice Roller Language
+
+--
+
+~
+
+~ Ever play D&D?
 
 --
 
@@ -439,3 +453,32 @@ console.log(greeting + " web rebels");
 
             1d6 + 2   =>   Math.floor(Math.random() * 6) + 1 + 2
             2d8 + 5   =>   Math.floor(Math.random() * 8) + 1 + Math.floor(Math.random() * 8) + 1 + 2
+
+----
+
+> That's the basic idea. Now let's make it.
+
+~
+
+~
+
+~ _demo time_
+
+
+----
+
+> That just about what everything I have to say to you today. I hope this whet your apetite
+> for stuff like this, it can be really fun once you get into it.
+> If any of you want to talk about emacs later, find me and we'll have a beer.
+
+~
+
+# Wow what a ride
+
+~
+
+~ **the end**
+
+~
+
+~ *github.com/arnemart/webreb2k17* / *twitter.com/arnemart*
