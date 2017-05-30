@@ -382,7 +382,7 @@ console.log(greeting + " web rebels");
 
 --
 
-![86](img/tree.png)
+![82](img/tree.png)
 
 ----
 
@@ -453,6 +453,56 @@ console.log(greeting + " web rebels");
 
             1d6 + 2   =>   Math.floor(Math.random() * 6) + 1 + 2
             2d8 + 5   =>   Math.floor(Math.random() * 8) + 1 + Math.floor(Math.random() * 8) + 1 + 2
+
+
+----
+
+~
+
+# The Dice Roller Language
+
+~
+
+Tokens:
+
+    2d6 + 3
+
+```javascript
+[
+  { type: "dice",     value: "2d6" },
+  { type: "operator", value: "+" },
+  { type: "number",   value: "3" }
+]
+```
+
+----
+
+~
+
+# The Dice Roller Language
+
+~
+
+AST:
+
+    2d6 + 3
+
+```javascript
+{
+  type: "program",
+  body: {
+    type: "operatorExpression",
+    operator: "+",
+    lhs: {
+      type: "diceExpression",
+      lhs: { type: "number", value: "2" },
+      rhs: { type: "number", value: "6" }
+    },
+    rhs: { type: "number", value: "3" }
+  }
+}
+```
+
 
 ----
 
