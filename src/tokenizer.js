@@ -7,7 +7,7 @@ function tokenizer(src) {
   while (pos < src.length) {
     let c = src[pos];
 
-
+    // Insert code here
 
     throw new TypeError('unknown character: ' + c);
   }

@@ -6,7 +6,7 @@ function parser(tokens) {
     let current;
     pos++;
 
-
+    // Insert code here
 
     throw new TypeError('Syntax error');
   }

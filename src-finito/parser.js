@@ -6,21 +6,21 @@ function parser(tokens) {
     let current;
     pos++;
 
-    if (token && token.type == 'dice') {
+    if (token && token.type == 'number') {
+      current = token;
+    } else if (token && token.type == 'dice') {
       let parts = token.value.split('d');
       current = {
         type: 'diceExpression',
         lhs: {
           type: 'number',
-          value: parts[0] || '0'
+          value: parts[0] || '1'
         },
         rhs: {
           type: 'number',
           value: parts[1]
         }
       };
-    } else if (token.type == 'number') {
-      current = token;
     }
 
     let nextToken = tokens[pos];
@@ -33,7 +33,7 @@ function parser(tokens) {
         lhs: current,
         rhs: walk()
       };
-    } else {
+    } else if (!nextToken) {
       return current;
     }
 
