@@ -92,9 +92,10 @@
 ```javascript
 export default React.createClass({
   render(): any {
-    return <div>
-      <blink>yolo</blink>
-    </div>;
+    return <body bgcolor="hotpink">
+      <bgsound src="canyon.mid" loop="infinite"/>
+      <marquee><font face="Comic Sans" size="40" color="teal">yolo</font></marquee>
+    </body>;
   }
 });
 ```
@@ -599,4 +600,4 @@ AST:
 
 ~
 
-~ *github.com/arnemart/webreb2k17* / *twitter.com/arnemart*
+~ *github.com/arnemart/webreb2k17* / *@arnemart*
