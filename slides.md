@@ -79,6 +79,29 @@
 
 ----
 
+> The most common use case for compiling or transpiling to JS is probably Babel and similar
+> things, that allow you to use javascript from the future in todays browsers. Babel converts
+> cutting-edge language features to gross old-style JS like our ancestors used to write.
+
+~
+
+![50](img/babel.png)
+
+~
+
+```javascript
+export default React.createClass({
+  render(): any {
+    return <div>
+      <blink>yolo</blink>
+    </div>;
+  }
+});
+```
+
+
+----
+
 > There's typescript from Microsoft, if you like writing JS but want some additional type safety
 
 ~
