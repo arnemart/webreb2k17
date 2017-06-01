@@ -4,12 +4,12 @@ function generator(ast) {
     switch (part.type) {
     case 'diceExpression':
       return Array(parseInt(part.lhs.value, 10))
-        .fill('Math.floor(Math.random() * ' + part.rhs.value + ') + 1')
+        .fill(`Math.floor(Math.random() * ${part.rhs.value}) + 1`)
         .join(' + ');
       break;
 
     case 'operatorExpression':
-      return '(' + walk(part.lhs) + part.operator + walk(part.rhs) + ')';
+      return `( ${walk(part.lhs)} ${part.operator} ${walk(part.rhs)} )`;
       break;
 
     case 'number':
